@@ -1,0 +1,3 @@
+[submodule "certifications/_build_stuff/MyCerts"]
+	path = certifications/_build_stuff/MyCerts
+	url = https://github.com/N2OMatt/MyCerts
