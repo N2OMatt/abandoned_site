@@ -180,7 +180,7 @@ def main():
                 ## Here we produce the last entries need to the
                 ## site main page.
                 if(len(last_entries) < kLastEnties_Count):
-                    entry_text = "<li><a href=\"{0}\">{1}</a></li>\n".format(
+                    entry_text = "<li><a href=\"blog/{0}\">{1}</a></li>\n".format(
                         entry["url"  ].replace("\n",""),
                         entry["title"].replace("\n","")
                     );
