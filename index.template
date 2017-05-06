@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>N2OMatt - Amazing Cow</title>
+</head>
+
+<!-- Body -->
+<body>
+
+<!-- Menu  -->
+<p align="center">
+    <font size="+4">N2OMatt</font><br/>
+    <font size="-1">
+        <a href="http://www.amazingcow.com">[Back to Amazing Cow]</a> --
+        <a href="http://github.com/N2OMatt/">[Github]</a> --
+        <a href="resume/">[Resume]</a> --
+        <a href="blog/">[Blog]</a> --
+        <a href="journal/">[Journal]</a>
+    </font>
+</p>
+
+
+<table width="100%" cellpadding="7" cellspacing="0" align="center" border="1">
+
+    <!-- Left Column -->
+    <tr><td rowspan="4" valign="top">
+        <!-- Blog -->
+        <p>
+            <b>Blog: (Last 5 entries)</b>
+            <ul>
+                __TEMPLATE_REPLACE_BLOG__
+            </ul>
+            <a href="./blog/index.html">All entries...</a>
+        </p>
+        <hr>
+        <!-- End of Blog -->
+
+        <!-- Personal Projects -->
+        <p>
+            <b>Personal Projects</b>
+            <ul>
+                __TEMPLATE_REPLACE_PERSONAL_PROJECTS__
+            </ul>
+        </p>
+        <hr>
+        <!-- End of Personal Projects -->
+
+
+        <!-- Other Projects -->
+        <p>
+            <b>Other Projects</b>
+            <ul>
+                <!-- Imidiar's Photo Totem -->
+                <li><b>Imidiar's Photo Totem</b>
+                <font size="-1">
+                    (<a href="https://github.com/AmazingCow-Imidiar/PhotoTotem">Github</a> --
+                     <a href="http://imidiar.com.br/">Imidiar's webpage</a>)
+                </font>
+                <!-- End Imidiar's Photo Totem -->
+                <br/>
+                <br/>
+
+                <!-- Donkey.bas -->
+                <li><b>Donkey.bas:</b>
+                <font size="-1">
+                    (<a href="https://www.microsoft.com/en-us/store/apps/donkeybas/9nblggh0ncj7">Windows Store</a>)
+                </font>
+                <br/>
+                Programmer / Artist, released by Eazz.
+                <!-- End Donkey.bas -->
+
+                <!-- Metro Genius -->
+                <li><b>Metro Genius:</b>
+                <font size="-1">
+                    (<a href="https://www.microsoft.com/en-us/store/apps/metro-genius/9nblggh0nccp">Windows Store</a>)
+                </font>
+                <br/>
+                Programmer / Artist, released by Eazz.
+                <!-- End Metro Genius -->
+                <br/>
+                <br/>
+
+                <!-- Pirate Treasure -->
+                <li><b>Pirate Treasure:</b>
+                <font size="-1">
+                    (<a href="https://www.microsoft.com/en-us/store/apps/pirate-treasure/9nblggh0nccq">Windows Store</a>)
+                </font>
+                <br/>
+                Programmer / Artist, released by Devilware.
+                <!-- End Pirate Treasure -->
+
+                <!-- Tic Tac Toe -->
+                <li><b>Tic Tac Toe:</b>
+                <font size="-1">
+                    (<a href="https://www.microsoft.com/en-us/store/apps/tic-tac-toe/9nblggh0nclt">Windows Store</a>)
+                </font>
+                <br/>
+                Programmer / Artist, released by Devilware.
+                <!-- End Tic Tac Toe -->
+            </ul>
+        </p>
+        <hr>
+        <!-- End of Other Projects -->
+
+        <!-- Lectures -->
+        <p>
+            <b>Lectures:</b>
+            <ul>
+                <!-- Windows 8 Camp -->
+                <li><b>Windows 8 Camp</b> @ Puc Minas, Belo Horizonte - MG (As MSP)
+                <font size="-1">
+                    (<a href="lectures/windows_8_camp">Photos</a> --
+                     <a href="https://win8campbh.codeplex.com/">Codeplex</a>)
+                </font>
+                <!-- End Windows 8 Camp -->
+
+                <!-- Windows Developer Day  -->
+                <li><b>Windows Developer Day</b> @ Unifei, Itajubá - MG (As MSP)
+                 <font size="-1">
+                    (<a href="lectures/windows_developer_day_unifei_itajubá">Photos</a>)
+                </font>
+                <!-- End Windows Developer Day  -->
+
+                <!-- Semana da Computação -->
+                <li><b>Semana da Computação</b> @ Inatel, Santa Rita do Sapucaí - MG (As MSP)
+                <!-- End Semana da Computação -->
+
+                <!-- App Day -->
+                <li><b>App Day</b> @ Puc Minas, Belo Horizonte - MG (As MSP)
+                <font size="-1">
+                    (<a href="lectures/app_day">Photos</a>)
+                </font>
+                <!-- End App Day -->
+                <br/>
+                <br/>
+
+                <!-- Nokia Game Developers Day  -->
+                <li><b>Nokia Game Developers Day</b> @ Puc Minas, Belo Horizonte - MG (As intern of MicBH)
+                <font size="-1">
+                    (<a href="lectures/nokia_game_developers_day">Photos</a>)
+                </font>
+                <!-- End Nokia Game Developers Day -->
+
+                <!-- Windows Phone Camp -->
+                <li><b>Windows Phone Camp</b> @ Puc Minas, Belo Horizonte - MG (As intern of MicBH)
+                <!-- End Windows Phone Camp -->
+
+                <!-- Nokia Game Developers Day  -->
+                <li><b>Cencon Nerd</b> @ Cecon, Belo Horizonte - MG
+                <font size="-1">
+                    (<a href="lectures/cecon_nerd">Photos</a>)
+                </font>
+                <!-- End Nokia Game Developers Day -->
+            </ul>
+        </p>
+        <hr>
+        <!-- End of Lectures -->
+
+        <!-- Certs -->
+        <p>
+            <b>Certifications:</b>
+            <ul>
+                __TEMPLATE_REPLACE_CERTIFICATIONS__
+            </ul>
+        </p>
+        <hr>
+        <!-- End of Certs -->
+
+        <!-- Others -->
+        <p>
+            <b>Others:</b>
+            <ul>
+            <li><b>Microsoft Student Partner</b> ~2012 - ~2014</li>
+            <li><b>Microsoft Innovation Center</b> (Internship) ~2011 - ~2013
+            <font size="-1">
+               (<a href="lectures/microsoft_innovation_center_-_MicBH">Photos</a>)
+            </font>
+
+            <!-- Tutorial about MonoGame -->
+            <li><b>Tutorial about MonoGame</b>
+            <font size="-1">
+               (<a href="https://www.youtube.com/watch?v=UTtF9Ags26g">Youtube</a>)
+            </font>
+            <!-- End Tutorial about MonoGame -->
+
+            </ul>
+        </p>
+        <hr>
+        <!-- End of Others -->
+
+    </td></tr>
+    <!-- End of Left Column -->
+
+
+    <!-- Right Column -->
+    <tr><td valign="top">
+        <h3>Work:</h3>
+        <ul>
+            <li>Game Developer - <a href="http://www.firehorse.com.br">Fire Horse</a>
+            <li>Hacker - <a href="http://www.amazingcow.com">Amazing Cow</a>
+        </ul>
+
+        <h3>Contact:</h3>
+        <ul>
+            <li><a href="mailto:n2omatt@gmail.com"> n2omatt@gmail.com</a> (Personal)</li>
+            <li><a href="mailto:n2omatt@amazingcow.com">n2omatt@amazingcow.com</a> (Amazing Cow)</li>
+            <li>+55 (11) 9-8499-6065 (Personal)</li>
+        </ul>
+
+        <h3>Social:</h3>
+        <ul>
+            <li><a href="https://br.linkedin.com/in/n2omatt">LinkedIn</a></li>
+            <li><a href="https://twitter.com/n2omatt">Twitter</a></li>
+            <li><a href="https://www.facebook.com/N2OMatt">Facebook</a></li>
+            <li><a href="https://www.instagram.com/n2omatt">Instagram</a></li>
+        </ul>
+
+
+        <h3>Dev:</h3>
+        <ul>
+            <li><a href="http://github.com/N2OMatt">GitHub</a></li>
+        </ul>
+    </td></tr>
+    <!-- End of Right Column -->
+</table>
+
+</body>
