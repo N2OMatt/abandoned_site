@@ -7,9 +7,10 @@
 ## Copy the resumes to Output folder.                                         ##
 ################################################################################
 
+echo "Processing Resume."
 ## Clean
-rm    -rf ./)Output
-mkdir -p  ./)Output
+rm    -rf ./_Output
+mkdir -p  ./_Output
 
 ## Copy content
 cp index_original.html ./_Output/index.html
