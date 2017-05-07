@@ -8,17 +8,20 @@
 ## Update the index with the output of certifications.                        ##
 ################################################################################
 
-rm    -rf _Output;
-mkdir -p  _Output;
+mkdir -p _Output;
 
 ## Update the Certifications.
 cd ./_build_stuff/MyCerts;
-    git pull origin master
+PULL_RESULT=$(git pull origin master | grep "Already up-to-date");
 cd -
 
-# Build the Certifications.
-cd ./_build_stuff/certification_scripts;
-    ./generate_certifications.sh;
-cd -
+EMPTY=$(ls _Output);
+
+if [[ -z $PULL_RESULT || -z $EMPTY ]]; then
+    # Build the Certifications.
+    cd ./_build_stuff/certification_scripts;
+        ./generate_certifications.sh;
+    cd -
+fi;
 
 
