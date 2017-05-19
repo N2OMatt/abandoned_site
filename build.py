@@ -23,6 +23,7 @@ import os;
 import os.path;
 import urllib;
 import json;
+import sys;
 
 
 ################################################################################
@@ -89,6 +90,8 @@ def build_personal_projects_list():
 ################################################################################
 ## Script                                                                     ##
 ################################################################################
+destination_dir = os.path.abspath(os.path.expanduser(sys.argv[1]));
+
 ## Clean up
 os.system("rm    -rf ./_Output");
 os.system("mkdir -p  ./_Output");
@@ -110,7 +113,7 @@ copy_build_script_output("resume");
 call_build_script       ("certifications");
 copy_build_script_output("certifications");
 
-
+## Replace the index template.
 index_template = read_file_text("index.template");
 blog_entries   = read_file_text("_Output/blog/last_entries.txt");
 projects       = build_personal_projects_list();
@@ -124,3 +127,11 @@ index_replaced = replace_index_template_contents(
 );
 
 write_file_text("_Output/index.html", index_replaced);
+
+
+################################################################################
+## Copy to destination folder                                                 ##
+################################################################################
+os.system("rm -rf {0}/n2omatt".format(destination_dir));
+os.system("cp -rv _Output/* {0}/".format(destination_dir));
+
