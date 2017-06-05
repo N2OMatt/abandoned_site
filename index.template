@@ -47,6 +47,27 @@
         <!-- End of Personal Projects -->
 
 
+        <!-- Open Source Contribs -->
+        <p>
+            <b>Open Source Contributions:</b>
+            <ul>
+                <!-- Cocos2dx -->
+                <li>Cocos2d-x</li>
+                <ul>
+                    <li><a href="https://github.com/cocos2d/cocos2d-x/pull/16466">#16466</a></li>
+                    <li><a href="https://github.com/cocos2d/cocos2d-x/pull/16789">#16789</a></li>
+                </ul>
+                <!-- 2048py -->
+                <li>2048py</li>
+                <ul>
+                    <li><a href="https://github.com/davidsousarj/2048py/pull/2">#2</a></li>
+                </ul>
+            </ul>
+        </p>
+        <hr>
+        <!-- End Open Source Contribs -->
+
+
         <!-- Other Projects -->
         <p>
             <b>Other Projects</b>
