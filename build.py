@@ -40,9 +40,12 @@ def call_build_script(path):
 
     os.chdir(curr_path);
 
-def copy_build_script_output(path):
-    os.system("mkdir -p ./_Output/{0}".format(path));
-    os.system("cp -rf ./{0}/_Output/* ./_Output/{0}".format(path));
+def copy_build_script_output(from_path, to_path = None):
+    if(to_path == None):
+        to_path = from_path;
+
+    os.system("mkdir -pv ./_Output/{0}".format(to_path));
+    os.system("cp   -rfv ./{0}/_Output/* ./_Output/{1}".format(from_path, to_path));
 
 
 def read_file_text(filename):
@@ -96,8 +99,8 @@ destination_dir = os.path.abspath(os.path.expanduser(sys.argv[1]));
 os.system("rm    -rf ./_Output");
 os.system("mkdir -p  ./_Output");
 
-## Call the inner build scripts.
-##   Blog
+# Call the inner build scripts.
+#   Blog
 call_build_script       ("blog");
 copy_build_script_output("blog");
 ##   Lectures
@@ -111,13 +114,13 @@ call_build_script       ("resume");
 copy_build_script_output("resume");
 ##   Certifications
 call_build_script       ("certifications");
-copy_build_script_output("certifications");
+copy_build_script_output("certifications", "certs");
 
 ## Replace the index template.
 index_template = read_file_text("index.template");
 blog_entries   = read_file_text("_Output/blog/last_entries.txt");
 projects       = build_personal_projects_list();
-certifications = read_file_text("_Output/certifications/certs.html");
+certifications = read_file_text("_Output/certs/certs.html");
 
 index_replaced = replace_index_template_contents(
     index_template,
