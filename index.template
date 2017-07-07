@@ -94,6 +94,23 @@
         </p>
         <hr>
 
+        <!-- Maybe versus evil games??? -->
+        <p>
+            <!-- Firehorse -->
+            <b> Other games published by Versus Evil:  </b>
+            <ul>
+                <li>
+                    <a href="http://store.steampowered.com/app/505630/Let_Them_Come/">
+                        <img src="http://cdn.edgecast.steamstatic.com/steam/apps/505630/header.jpg?t=1497039570"
+                            width="15%"
+                            height="15%"/>
+                        <b>Let them Come - Klemen Lozar</b>
+                    </a> - Integration of AlienFx SDK with Game Maker Studio.
+                </li>
+            </ul>
+        </p>
+        <hr>
+
 
         <!-- Personal Projects -->
         <p>
