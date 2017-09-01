@@ -88,7 +88,12 @@
                 </li>
 
                 <li>
-                    <b>Fist Punch 2 - Cartoon Network</b> (To be released...) - Additional Programming
+                    <a href="http://www.cartoonnetworkasia.com/game/regular-show-fist-punch2">
+                        <img src="./img/games/fist_punch.jpg"
+                            width="15%"
+                            height="15%"/>
+                        <b>Fist Punch 2 - Cartoon Network</b>
+                    </a> - Additional Programming
                 </li>
             </ul>
         </p>
