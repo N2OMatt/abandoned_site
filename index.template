@@ -296,35 +296,35 @@
     <!-- End of Left Column -->
 
 
-    <!-- Right Column -->
-    <tr><td valign="top">
-        <h3>Work:</h3>
-        <ul>
-            <li>Systems Engineer - <a href="http://www.goepik.com.br">GoEpik</a>
-            <li>Hacker - <a href="http://www.amazingcow.com">Amazing Cow</a>
-	</ul>
+    <!-- ------------------------------------------------------------------- -->
+    <!-- Right Column                                                        -->
+    <!-- ------------------------------------------------------------------- -->
+    <tr>
+        <td valign="top">
+            <h3>Work:</h3>
+            <ul>
+                <li>Systems Engineer - <a href="http://www.goepik.com.br">GoEpik</a>
+                <li>Hacker - <a href="http://www.amazingcow.com">Amazing Cow</a>
+                <li>CTO - <a href="http://letslive.green">Let's Live Green</a>
+            </ul>
 
-        <h3>Contact:</h3>
-        <ul>
-            <li><a href="mailto:n2omatt@gmail.com"> n2omatt@gmail.com</a> (Personal)</li>
-            <li><a href="mailto:n2omatt@amazingcow.com">n2omatt@amazingcow.com</a> (Amazing Cow)</li>
-            <li>+55 (11) 9-8499-6065 (Personal)</li>
-        </ul>
+            <h3>Contact:</h3>
+            <ul>
+                <li><a href="mailto:n2omatt@amazingcow.com">n2omatt@amazingcow.com</a> (Amazing Cow)</li>
+                <li>+55 (11) 9-8499-6065 (Personal)</li>
+            </ul>
 
-        <h3>Social:</h3>
-        <ul>
-            <li><a href="https://br.linkedin.com/in/n2omatt">LinkedIn</a></li>
-            <li><a href="https://twitter.com/n2omatt">Twitter</a></li>
-            <li><a href="https://www.facebook.com/N2OMatt">Facebook</a></li>
-            <li><a href="https://www.instagram.com/n2omatt">Instagram</a></li>
-        </ul>
+            <h3>Social:</h3>
+            <ul>
+                <li><a href="https://br.linkedin.com/in/n2omatt">LinkedIn</a></li>
+            </ul>
 
-
-        <h3>Dev:</h3>
-        <ul>
-            <li><a href="http://github.com/N2OMatt">GitHub</a></li>
-        </ul>
-    </td></tr>
+            <h3>Dev:</h3>
+            <ul>
+                <li><a href="http://github.com/N2OMatt">GitHub</a></li>
+            </ul>
+        </td>
+    </tr>
     <!-- End of Right Column -->
 </table>
 
