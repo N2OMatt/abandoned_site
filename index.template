@@ -23,7 +23,6 @@
 
 
 <table width="100%" cellpadding="7" cellspacing="0" align="center" border="1">
-
     <!-- Left Column -->
     <tr><td rowspan="4" valign="top">
         <!-- Blog -->
@@ -274,19 +273,25 @@
         <p>
             <b>Others:</b>
             <ul>
-            <li><b>Microsoft Student Partner</b> ~2012 - ~2014</li>
-            <li><b>Microsoft Innovation Center</b> (Internship) ~2011 - ~2013
-            <font size="-1">
-               (<a href="lectures/microsoft_innovation_center_-_MicBH">Photos</a>)
-            </font>
+                <!-- Microsoft Student Partner -->
+                <li><b>Microsoft Student Partner</b> ~2012 - ~2014</li>
 
-            <!-- Tutorial about MonoGame -->
-            <li><b>Tutorial about MonoGame</b>
-            <font size="-1">
-               (<a href="https://www.youtube.com/watch?v=UTtF9Ags26g">Youtube</a>)
-            </font>
-            <!-- End Tutorial about MonoGame -->
+                <!-- Microsoft Inovation Cetner -->
+                <li><b>Microsoft Innovation Center</b> (Internship) ~2011 - ~2013
+                <font size="-1">
+                   (<a href="lectures/microsoft_innovation_center_-_MicBH">Photos</a>)
+                </font>
+                <!-- End Microsoft Inovation Cetner -->
 
+                <!-- Tutorial about MonoGame -->
+                <li><b>Tutorial about MonoGame</b>
+                <font size="-1">
+                   (<a href="https://www.youtube.com/watch?v=UTtF9Ags26g">Youtube</a>)
+                </font>
+                <!-- End Tutorial about MonoGame -->
+
+                <!-- Political Views -->
+                <li><a href="./political_views/index.html"><b>My political views</b></a>
             </ul>
         </p>
         <hr>
