@@ -115,6 +115,9 @@ copy_build_script_output("resume");
 ##   Certifications
 call_build_script       ("certifications");
 copy_build_script_output("certifications", "certs");
+##   Political Views
+call_build_script       ("political_views");
+copy_build_script_output("political_views");
 
 ## Replace the index template.
 index_template = read_file_text("index.template");
