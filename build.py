@@ -134,8 +134,12 @@ index_replaced = replace_index_template_contents(
 
 write_file_text("_Output/index.html", index_replaced);
 
-## Copy Image folder..
+## Copy Image folder...
 os.system("cp -rv img _Output");
+
+## Copy Archives folder...
+os.system("cp -rv archive _Output");
+
 
 ################################################################################
 ## Copy to destination folder                                                 ##
