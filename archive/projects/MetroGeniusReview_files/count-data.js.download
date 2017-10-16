@@ -1,0 +1,5 @@
+var DISQUSWIDGETS;
+
+if (typeof DISQUSWIDGETS != 'undefined') {
+    DISQUSWIDGETS.displayCount({"text":{"and":"e","comments":{"zero":"Nenhum Coment\u00e1rio","multiple":"{num} Coment\u00e1rios","one":"1 Coment\u00e1rio"}},"counts":[{"id":"721 http:\/\/www.windowsclub.com.br\/?p=721","comments":0}]});
+}
