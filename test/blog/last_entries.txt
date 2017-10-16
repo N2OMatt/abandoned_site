@@ -1,0 +1,2 @@
+<li><a href="blog/oct_3_2017_curitiba_and_my_new_host.html">Curitiba and my new Host </a></li>
+<li><a href="blog/may_2_2017_i_really_need_improve_my_site.html">I really need improve my site... </a></li>

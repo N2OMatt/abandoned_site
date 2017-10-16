@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>N2OMatt - Blog - Amazing Cow</title>
+     <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+        body {
+            margin:40px auto;
+            max-width:650px;
+            line-height:1.4;
+            font-size:16px;
+            color:#444;
+            padding:0 10px
+        }
+        h1,h2,h3 {
+            line-height:1.2
+        }
+
+        ul {
+            margin:auto auto auto -20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu  -->
+    <p align="center">
+        <font size="+4">N2OMatt - Blog</font><br/>
+        <font size="-1">
+            <a href="http://www.amazingcow.com">[Back to Amazing Cow]</a> --
+            <a href="http://github.com/N2OMatt/">[Github]</a> --
+            <a href="resume/">[Resume]</a> --
+            <a href="blog/">[Blog]</a> --
+            <a href="journal/">[Journal]</a>
+        </font>
+    </p>
+
+    <!-- I really need improve my site... -->
+<p><center><h1>I really need improve my site... 
+</h1>May 2, 2017</center></p>
+
+<!-- ----------------------------------------------------------------------- -->
+<h2>Intro: </h2>
+<p>
+    Hello folks... <br>
+
+    I'm starting a blog right now ;D <br>
+    This is a thing that I want to do for a long time, but somehow I always managed
+    to postpone it for a little bit. <br>
+    <br>
+    But no more... ;D (I hope)
+</p>
+
+<p>
+    The blog will be technical at most part, but I'll try to give my 2 cents about
+    some philosophical matters too. <br>
+    I really like philosophy and I think that now is a good time to start write
+    about it ;D <br>
+</p>
+
+<p>
+    I had no experience in writing at all, I mean, I can write what I think most
+    of the times and my job sometimes require it (at least no one ever had complained
+    about my technical stuff), but I'm not used to it. <br>
+    <br>
+    Interesting enough, writing is a skill that I really admire and want to have,
+    but up to today I really did nothing to achieve. :/
+</p>
+
+<p>
+    Last but not least, I'm not a English speaker, but still I will write in English.<br>
+    That is pretty clear to me, I want use this space (and the time that it requires)
+    to improve my writing and English skills.<br>
+    <br>
+
+    So please, bear with me and forgive me in advance for all the errors that
+    <b>errors</b> appear in the text ;D
+</p>
+
+<!-- ----------------------------------------------------------------------- -->
+<h2>About the title...</h2>
+
+<p>
+    Let's let the small talk before us and move for what <i>really matters</i><br>
+    <br>
+
+    I have a site... and you probably now that since you're on it :D<br>
+    <br>
+
+    My site and the <a href="http://amazingcow.com">www.amazingcow.com</a> is
+    <i>so called</i> static generated. By saying this, I mean that I have no
+    PHP or database involved at all.
+    <br>
+
+    The entire content is generated offline by a set of <i>shell</i> and <i>python</i>
+    scripts on my machine. I choose do this way because it appeared to be more
+    reasonable to me at time.<br>
+    <br>
+
+    Yes, I tried a couple of times make a blog, have a site and all this stuff.<br>
+</p>
+
+<h3>The reasons...</h3>
+<p>
+    ... that led me to think that a couple of shell scripts would surfice was:
+    <ul>
+        <li> I have a huge amount of certifications that I want to show in site. </li>
+        <li> The doxygen documentation for the projects that I made shall be
+             include on the content.
+        </li>
+        <li> All the photos from places that I visited should be grouped together.
+    </ul>
+
+    But the main reason was that I want that <b>everything</b> to be <b>built
+    automatically</b>.
+    <br>
+
+    So, if I create another project, or take another certification, all
+    <i>(in theory)</i> that I need to do is, put the content on the directory and
+    rebuild the site.
+</p>
+
+<h3>What I built: </h3>
+<h4>Certifications</h4>
+<p>
+    Tackling the first issue, i.e. the <b>certifications</b>. I had them on a
+    <a href="https://github.com/N2OMatt/MyCerts">github repo</a>.<br>
+    They're almost on pdf format, but I need to display png. This is really
+    easy, I just write some shell scripts to use
+    <a href="https://www.imagemagick.org/script/index.php">Image Magick</a> and
+    convert the images.<br>
+    Next, more shell script to generate a <i>default</i> html content with the
+    certification png and the it's title, year, etc.<br>
+    <br>
+
+    Pretty easy... and worked fine ;D
+</p>
+
+<h4>Doxygen Documentation</h4>
+<p>
+    Next I need handle the <b>project's doxygen documentation</b>.<br>
+    That was even easier. All that I need to do is:
+    <ul>
+        <li> Clone the project </li>
+        <li> Go to it's directory</li>
+        <li> Run doxygen</li>
+    </ul>
+    Seriously, that's all ;D<br>
+    <br>
+
+    I get the list of the projects using the
+    <a href="https://developer.github.com/v3/">Github API</a>, so isn't that
+    hard to iterate for all the projects and stuff.<br>
+    <br>
+
+    Again, pretty easy and really worked fine ;D
+</p>
+
+<h4>Photos</h4>
+<p>
+    Lastly, I want that <b>all my photos</b> be <b>automatically handled</b> by
+    the scripts. <br>
+    With this I mean, I put the photos, the <i>event</i> and the
+    site builder generate all the pages, links, everything that is needed.<br>
+    <br>
+
+    Yep, this was just a desire... I even didn't start to implement this feature.
+</p>
+
+<h3>So what?</h3>
+<p>
+    Needless to say that I failed <b>miserably</b> on that.<br>
+    <br>
+
+    I start implementing somethings while I was using
+    <a href="https://jekyllrb.com/">Jekyll</a>,
+    that use markdown instead plain html. <br>
+
+    Other things I didn't planed correctly and not scale so well.<br>
+    <br>
+
+    And lastly my host provider (GoDaddy) sucks a lot in the most basic plan.<br>
+    <br>
+
+    When I started all this stuff, I was using Hostgator (again in the most basic plan)
+    and they were pretty liberal on their machines. I mean, I can just build the
+    entire site on the server. <br>
+    <br>
+
+    This was really great. I just schedule a cron job and everything was fine.<br>
+    Sometimes I actually forgot all the mess that I created, all the I need to
+    do was commit my changes and the server would do the rest ;D<br>
+    <br>
+
+    But GoDaddy is pretty restrictive on the servers and I can't build my site
+    on their machines. So first I need build the content locally and then upload
+    via FTP.<br>
+    This is awful since I need to build everything locally and this is very slow
+    on my machine, and to get things worse I wasn't able to configure the
+    FTP via command line, forcing me to open Filezilla and submit all the
+    stuff manually. <br>
+    <br>
+
+    This <b>defeats</b> that I did planned. Now I must do the things <b>manually</b>
+    and worse all the site builder is pretty messy.
+</p>
+
+<p>
+    Again... <b>I really need improve my site</b>
+</p>
+
+
+</body>
+
+<html>
