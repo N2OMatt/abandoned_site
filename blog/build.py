@@ -18,7 +18,7 @@
 import sys;
 import os;
 import os.path;
-
+from pprint import pprint;
 
 ################################################################################
 ## Globals                                                                    ##
@@ -156,8 +156,9 @@ def main():
         if(not index_listing_dict[year].has_key(month)):
             index_listing_dict[year][month] = [];
 
+        day = date[1];
         index_listing_dict[year][month].append(
-            { "title" : title, "url" : filename }
+            { "day" : day, "title" : title, "url" : filename }
         );
 
     ## Create the index.html file
@@ -171,18 +172,21 @@ def main():
             index_list_text += "<ul>\n";
 
             entries_list = month_dict[month];
-            for entry in entries_list:
-                index_list_text += "<li><a href=\"{0}\">{1}</a></li>\n".format(
-                    entry["url"  ].replace("\n",""),
-                    entry["title"].replace("\n","")
+            for entry in sorted(entries_list, reverse=True, key=lambda x: x["day"]):
+                html = "<li><a href=\"{url}\">({day}) {title}</a></li>\n".format(
+                    url   = entry["url"  ].replace("\n",""),
+                    day   = entry["day"  ],
+                    title = entry["title"].replace("\n","")
                 );
+                index_list_text += html;
 
                 ## Here we produce the last entries need to the
                 ## site main page.
                 if(len(last_entries) < kLastEnties_Count):
-                    entry_text = "<li><a href=\"blog/{0}\">{1}</a></li>\n".format(
-                        entry["url"  ].replace("\n",""),
-                        entry["title"].replace("\n","")
+                    entry_text = "<li><a href=\"blog/{url}\">({day}) {title}</a></li>\n".format(
+                        url   = entry["url"  ].replace("\n",""),
+                        day   = months_list[month].capitalize() + ", " + str(entry["day"]),
+                        title = entry["title"].replace("\n","")
                     );
                     last_entries.append(entry_text);
 
