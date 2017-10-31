@@ -1,12 +1,22 @@
 #!/bin/bash
-################################################################################
-## file   : build.sh                                                          ##
-## date   : Nov 3, 2016                                                       ##
-## author : n2omatt <n2o.matt@gmail.com>                                      ##
+##~---------------------------------------------------------------------------##
+##                        ____                       _   _                    ##
+##                  _ __ |___ \ ___  _ __ ___   __ _| |_| |_                  ##
+##                 | '_ \  __) / _ \| '_ ` _ \ / _` | __| __|                 ##
+##                 | | | |/ __/ (_) | | | | | | (_| | |_| |_                  ##
+##                 |_| |_|_____\___/|_| |_| |_|\__,_|\__|\__|                 ##
+##                              www.n2omatt.com                               ##
+##  File      : build.sh                                                      ##
+##  Project   : site                                                          ##
+##  Date      : Nov 3, 2016                                                   ##
+##  License   : GPLv3                                                         ##
+##  Author    : n2omatt <n2omatt@amazingcow.com>                              ##
+##  Copyright : n2omatt - 2017                                                ##
 ##                                                                            ##
-## Create the certifications images and html pages.                           ##
-## Update the index with the output of certifications.                        ##
-################################################################################
+##  Description :                                                             ##
+##    Create the certifications images and html pages.                        ##
+##    Update the index with the output of certifications.                     ##
+##---------------------------------------------------------------------------~##
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
 cd $SCRIPT_DIR;
