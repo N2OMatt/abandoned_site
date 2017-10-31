@@ -12,5 +12,8 @@ echo "Processing Resume."
 rm    -rf ./_Output
 mkdir -p  ./_Output
 
+## Build
+./build_resume.py
+
 ## Copy content
-cp index_original.html ./_Output/index.html
+mv result.html ./_Output/index.html
