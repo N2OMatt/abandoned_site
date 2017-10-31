@@ -8,6 +8,9 @@
 ## Update the index with the output of certifications.                        ##
 ################################################################################
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
+cd $SCRIPT_DIR;
+
 mkdir -p _Output;
 
 ## Update the Certifications.
