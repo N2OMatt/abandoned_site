@@ -18,7 +18,7 @@ cd ./_build_stuff/MyCerts;
 PULL_RESULT=$(git pull origin master | grep "Already up-to-date");
 cd -
 
-EMPTY=$(ls _Output);
+EMPTY=$(ls _Output/certs/certs.html);
 
 if [[ -z $PULL_RESULT || -z $EMPTY ]]; then
     # Build the Certifications.
