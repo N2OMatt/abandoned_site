@@ -1,0 +1,5 @@
+- Essay about why marijuana should be legal and other drugs decriminalized.
+
+--------------------------------------------------------------------------------
+std::string::back() is undefined behaviour
+    https://stackoverflow.com/questions/35567692/what-would-return-for-back-method-for-an-empty-string
