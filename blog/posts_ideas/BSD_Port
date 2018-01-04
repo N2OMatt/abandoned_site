@@ -1,0 +1,74 @@
+HI there! ;D
+
+## Intro:
+
+I want to share my experience of porting some of my stuff to BSD!
+
+## Motivation:
+
+Well, shortly (I hope) I'll move to Lisbon - Portugal to join the Miniclip
+Web Client team - I can't be more happier ;D. So I asked them which OS I'll
+use and the reply was astonishing...
+
+I'll use OSX - Well I very happy that won't be Windows, but still isn't GNU/Linux.
+Since the OSX uses the BSD user land, instead of the much superior GNU one, I
+tought that would be wiser to start porting my stuff to the BSD, so when I get
+in the job, I can just install everything and dive deep to the actual work!
+
+I'll not get into the details of each program - but I'll let the link for the
+ones that are interested enough to learn about them - but I'll try to explain
+why went wrong and needed to be changed.
+
+Mostly of the programs that I ported were or, bash scripts, or python scripts.
+Like I said, I'm porting the stuff that I really use on my day to day and that
+I can't live without. I so used to them that when I get a machine without them
+I feel very, very <i>naked</i>...
+
+## Caveat
+
+I had no OSX at moment, my Amanda is with my friend and the fucker is traveling!
+So for the good or the bad I'll porting firstly to FreeBSD - actually GhostBSD.
+
+So for what I can remember, some issues wouldn't apply directly to OSX since
+it change some defaults of the BSDs, but still with the porting process I
+learned a lot of stuff and make my code more robust!
+
+When I refer to GNU/Linux, bear in mind that I'm using Xubuntu-Core and the
+default may vary from other distros - but I found that what I'm saying applies
+for all distros that I worked on (CentOS, Ubuntu, Debian, Ubuntu, OpenSuse).
+
+When I refer to BSD, I'm actually meaning GhostBSD that the BSD that I had
+exposure, besides the OSX itself. I have little knowlegde about BSDs in general
+so take easy, and if I say anything wrong, <b>please correct me</b>!
+
+## General issues:
+
+The major issue was the <a >shabang lines</a>. On GNU/Linux - and I think with
+OSX as well - the default shell is bash and it's installed on /usr/bin/bash.
+The same goes for python, it's default installed on /usr/bin/python.
+
+But on BSD
+
+
+## Programs that I ported so far:
+
+- bash_status_line
+- DownloadRepos
+- dots
+- dots_utils
+- gosh (pkg-config is very different...)
+  $HOME is /usr/home
+     https://unix.stackexchange.com/questions/320233/can-a-different-path-be-used-in-place-of-home
+     https://en.wikipedia.org/wiki/Home_directory
+     https://lists.freebsd.org/pipermail/freebsd-questions/2012-February/238454.html
+     http://freebsd.1045724.x6.nabble.com/usr-home-vs-home-td5012063.html
+     The issue was: realpath vs abspath.
+- cowtodo: Just the shebang.
+
+COREFS
+    - New add some macros.
+CORELOG
+    http://nxmnpg.lemoda.net/3/getprogname
+    program_invocation_name
+
+This was trick one to port, correctly. Like all other scripts
